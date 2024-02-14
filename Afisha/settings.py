@@ -31,11 +31,12 @@ ALLOWED_HOSTS = ['*']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Afisha',
-        'USER': 'postgres',
-        'PASSWORD': '123',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'NAME': BASE_DIR / 'db.sqlite3'
+        # 'NAME': os.environ.get('DB_NAME'),
+        # 'USER': 'postgres',
+        # 'PASSWORD': '123',
+        # 'HOST': 'localhost',
+        # 'PORT': '5432'
     }
 }
 
